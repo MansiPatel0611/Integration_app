@@ -1,0 +1,11 @@
+c:\users\mansi\source\repos\Integration\Integration\bin\Debug\netcoreapp2.0\Integration.deps.json
+c:\users\mansi\source\repos\Integration\Integration\bin\Debug\netcoreapp2.0\Integration.runtimeconfig.json
+c:\users\mansi\source\repos\Integration\Integration\bin\Debug\netcoreapp2.0\Integration.runtimeconfig.dev.json
+c:\users\mansi\source\repos\Integration\Integration\bin\Debug\netcoreapp2.0\Integration.dll
+c:\users\mansi\source\repos\Integration\Integration\bin\Debug\netcoreapp2.0\Integration.pdb
+c:\users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.csproj.CoreCompileInputs.cache
+c:\users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.AssemblyInfoInputs.cache
+c:\users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.AssemblyInfo.cs
+c:\users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.dll
+c:\users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.pdb
+C:\Users\mansi\source\repos\Integration\Integration\obj\Debug\netcoreapp2.0\Integration.csprojAssemblyReference.cache
