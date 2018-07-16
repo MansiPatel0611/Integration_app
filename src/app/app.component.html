@@ -1,13 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <div style="background-color:lightblue;text-align:center">
+  <div style="text-align:center">
     <h1>EMPLOYEE SYSTEM</h1>
   </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" style="margin-left:20px;font-size:16px" [routerLink]="['/home']">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="margin-left:20px;font-size:16px" [routerLink]="['/list']">Employee List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="margin-left:20px;font-size:16px" [routerLink]="['/add']">Add new employee</a>
+      </li>
+    </ul>
+
+  </nav>
   <div style="background-color:lightblue">
-    <button class="btn btn-basic" style="margin-left:20px;font-size:16px" [routerLink]="['/home']">home</button>
-    <button class="btn btn-basic" style="margin-left:20px;font-size:16px" [routerLink]="['/list']">Employee List</button>
-    <button class="btn btn-basic" style="margin-left:20px;font-size:16px" [routerLink]="['/add']">Add new employee</button>
-  </div>
+      </div>
   <br>
   <br>
   <router-outlet></router-outlet>

@@ -27,7 +27,7 @@ export class EditEmployeeComponent implements OnInit {
   }
   onSubmit() {
     for (var i = 0; i < this.employees.length; i++) {
-      if (this.employees[i].id === this.id) {
+      if (this.employees[i].id === this.data.id) {
         this.updateIndex = i;
         break;
       }

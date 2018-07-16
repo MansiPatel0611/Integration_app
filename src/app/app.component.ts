@@ -10,14 +10,14 @@ import { RouteReuseStrategy, ActivatedRouteSnapshot } from '@angular/router';
 export class AppComponent implements OnInit {
 
   constructor(private _router: Router) {
-    this._router.routeReuseStrategy.shouldReuseRoute = function () {
-      return false;
-    };}
+   }
   
 
   ngOnInit(){
     
-
+    this._router.routeReuseStrategy.shouldReuseRoute = function () {
+      return false;
+    };
     this._router.events.subscribe((evt) => {
       if (evt instanceof NavigationEnd) {
         this._router.navigated = false;

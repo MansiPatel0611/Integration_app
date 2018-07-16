@@ -2,13 +2,13 @@
 <form #form="ngForm" (ngSubmit)="onSubmit()" style="margin-left:40px" novalidate class="editForm">
   <h3>New Employee Data Form</h3>
 
-  
-  First name:
-    <input type="text" style="position:absolute;left:200px" name="firstname" [(ngModel)]="data.firstname"><br><br>
-    Last name:
 
-    <input type="text" style="position:absolute;left:200px" name="lastname" [(ngModel)]="data.lastname"><br><br>
-  
+  First name:
+  <input type="text" style="position:absolute;left:200px" name="firstName" [(ngModel)]="data.firstname"><br><br>
+
+  Last name:
+  <input type="text" style="position:absolute;left:200px" name="lastname" [(ngModel)]="data.lastname"><br><br>
+
   Email:
   <input type="text" style="position:absolute;left:200px" name="eid" [(ngModel)]="data.email"><br><br>
 

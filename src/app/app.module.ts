@@ -29,7 +29,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent },
-      { path: 'list', component: EmployeeListComponent }], { useHash: true }),
+      { path: 'list', component: EmployeeListComponent }],
+      { useHash: true }),
       RouterModule.forChild([
         { path: 'edit/:id', component: EditEmployeeComponent },
         { path: 'view/:id', component: EmployeeDataComponent },
