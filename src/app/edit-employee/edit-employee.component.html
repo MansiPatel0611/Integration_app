@@ -1,39 +1,82 @@
+<div class="container">
+  <div>
+    <div class="panel-heading">
+      <div class="panel-title text-center">
+        <h2 class="title">Employee Edit Form</h2>
+        <hr />
+      </div>
+    </div>
+    <div>
+      <form class="form-horizontal" #form="ngForm" (ngSubmit)="onSubmit()" novalidate>
 
-<form #form="ngForm" (ngSubmit)="onSubmit()" style="margin-left:40px">
-  <h3>Employee Data Edit Form</h3>
+        <div class="form-group">
+          <label for="firstname" class="cols-sm-2 control-label">First Name</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.firstname" name="firstname" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="cols-sm-2 control-label">Last Name</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.lastname" name="lastname" />
+          </div>
+        </div>
 
-  First name:
-  <input type="text" style="position:absolute;left:200px" name="firstname" [(ngModel)]="data.firstname"><br><br>
+        <div class="form-group">
+          <label for="eid" class="cols-sm-2 control-label">Your Email</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="eid" [(ngModel)]="data.email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="cols-sm-2 control-label">Address</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.address" name="address" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="uname" class="cols-sm-2 control-label">Username</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="uname" [(ngModel)]="data.username" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass" class="cols-sm-2 control-label">Password</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="pass" [(ngModel)]="data.password" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="gender" class="cols-sm-2 control-label">Gender</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="gender" [(ngModel)]="data.gender" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="qualification" class="cols-sm-2 control-label">Qualification</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="qualification" [(ngModel)]="data.qualification" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="experience" class="cols-sm-2 control-label">Experience</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="experience" [(ngModel)]="data.experience" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="langKnown" class="cols-sm-2 control-label">Languages Known</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="langKnown" [(ngModel)]="data.langKnown" />
+          </div>
+        </div>
+        <hr />
+        <div class="form-group ">
+          <button type="submit" class="btn btn-success">Submit</button>
 
-  Last name:
-  <input type="text" style="position:absolute;left:200px" name="lastname" [(ngModel)]="data.lastname"><br><br>
-
-  Email:
-  <input type="text" style="position:absolute;left:200px" name="eid" [(ngModel)]="data.email"><br><br>
-
-  Address:
-  <input type="text" style="position:absolute;left:200px" name="address" [(ngModel)]="data.address"><br><br>
-
-  User Name:
-  <input style="position:absolute;left:200px" type="text" name="uname" [(ngModel)]="data.username"><br><br>
-
-  Password:
-  <input type="text" style="position:absolute;left:200px" name="pass" [(ngModel)]="data.password"><br><br>
-
-  Gender:
-  <input type="text" style="position:absolute;left:200px" name="gender" [(ngModel)]="data.gender"><br><br>
-
-  Qualification:
-  <input type="text" name="qualification" style="position:absolute;left:200px" [(ngModel)]="data.qualification"><br><br>
-
-  Experience:
-  <input type="text" name="experience" style="position:absolute;left:200px" [(ngModel)]="data.experience"><br><br>
-
-  Coding Languages:
-  <input type="text" name="langKnown" [(ngModel)]="data.langKnown" style="position:absolute;left:200px"><br><br>
-
-
-  <button type="submit" class="btn btn-success" style="margin-left:50px;font-size:16px">Update</button>
-  <button (click)="on_cancel()" class="btn btn-warning" style="margin-left:20px;font-size:16px">Cancel</button>
-</form>
-
+          <button  style="position:absolute;margin-left:10px" class="btn btn-warning" (click)="on_cancel()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,47 +1,91 @@
+<div class="container">
+  <div>
+    <div class="panel-heading">
+      <div class="panel-title text-center">
+        <h2 class="title">New Employee Form</h2>
+        <hr />
+      </div>
+    </div>
+    <div>
+      <form class="form-horizontal" #form="ngForm" (ngSubmit)="onSubmit()" novalidate>
 
-<form #form="ngForm" (ngSubmit)="onSubmit()" style="margin-left:40px" novalidate class="editForm">
-  <h3>New Employee Data Form</h3>
+        <div class="form-group">
+          <label for="firstname" class="cols-sm-2 control-label">First Name</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.firstname" name="firstname" placeholder="Enter your First Name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="cols-sm-2 control-label">Last Name</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.lastname" name="lastname" placeholder="Enter your last Name" />
+          </div>
+        </div>
 
+        <div class="form-group">
+          <label for="eid" class="cols-sm-2 control-label">Your Email</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="eid" [(ngModel)]="data.email" placeholder="Enter your Email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="cols-sm-2 control-label">Address</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="data.address" name="address" placeholder="Enter your Address" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="uname" class="cols-sm-2 control-label">Username</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="uname" [(ngModel)]="data.username" placeholder="Enter your Username" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass" class="cols-sm-2 control-label">Password</label>
+          <div class="cols-sm-10">
+            <input type="password" class="form-control" name="pass" [(ngModel)]="data.password" placeholder="Enter your Password" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="cols-sm-2 control-label" for="rgender">Gender</label>
+          <div class="cols-sm-10">
+            <label class="radio-inline">
+              <input type="radio" [(ngModel)]="data.gender" name="rgender" value="Female">Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" [(ngModel)]="data.gender" name="rgender" value="Male">Male
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="qualification" class="cols-sm-2 control-label">Qualification</label>
+          <div class="cols-sm-10">
+            <select class="form-control" [(ngModel)]="data.qualification" name="qualification">
+              <option *ngFor="let quali of qualification">
+                {{ quali }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="experience" class="cols-sm-2 control-label">Experience</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="experience" [(ngModel)]="data.experience" placeholder="Enter your Experience" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="langKnown" class="cols-sm-2 control-label">Languages Known</label>
+          <div class="cols-sm-10">
+            <input type="text" class="form-control" name="langKnown" [(ngModel)]="data.langKnown" placeholder="Enter languages known" />
+          </div>
+        </div>
+        <hr />
+        <div class="form-group ">
+          <button type="submit" class="btn btn-success">Submit</button>
 
-  First name:
-  <input type="text" style="position:absolute;left:200px" name="firstName" [(ngModel)]="data.firstname"><br><br>
-
-  Last name:
-  <input type="text" style="position:absolute;left:200px" name="lastname" [(ngModel)]="data.lastname"><br><br>
-
-  Email:
-  <input type="text" style="position:absolute;left:200px" name="eid" [(ngModel)]="data.email"><br><br>
-
-  Address:
-  <input type="text" style="position:absolute;left:200px" name="address" [(ngModel)]="data.address"><br><br>
-
-  User Name:
-  <input style="position:absolute;left:200px" type="text" name="uname" [(ngModel)]="data.username"><br><br>
-
-  Password:
-  <input type="text" style="position:absolute;left:200px" name="pass" [(ngModel)]="data.password"><br><br>
-
-  Gender:
-  <label style="position:absolute;left:200px"><input type="radio" name="rgender" [(ngModel)]="data.gender" value="Male">Male</label>
-  <label style="position:absolute;left:270px">
-    <input type="radio" name="rgender" [(ngModel)]="data.gender" value="Female">Female
-  </label><br><br>
-
-  Qualification:
-  <select style="position:absolute;left:200px" [(ngModel)]="data.qualification" name="qualification">
-    <option *ngFor="let quali of qualification">
-      {{ quali }}
-    </option>
-  </select>
-  <br /><br />
-  Experience:
-  <input type="text" name="experience" style="position:absolute;left:200px" [(ngModel)]="data.experience"><br><br>
-
-  Coding Languages:
-  <input type="text" name="langKnown" [(ngModel)]="data.langKnown" style="position:absolute;left:200px"><br><br>
-
-
-  <button type="submit" class="btn btn-success" style="margin-left:50px;font-size:16px">Add</button>
-  <button class="btn btn-warning" (click)="on_cancel()" style="margin-left:20px;font-size:16px">Cancel</button>
-</form>
-
+          <button style="position:absolute;margin-left:10px" class="btn btn-warning" (click)="on_cancel()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

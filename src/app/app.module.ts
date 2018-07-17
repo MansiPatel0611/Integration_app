@@ -11,6 +11,7 @@ import { EmployeeDataComponent } from './employee-data/employee-data.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { CapitalizePipe } from '../app/Model/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
     EmployeeListComponent,
     EmployeeDataComponent,
     EditEmployeeComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

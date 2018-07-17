@@ -1,27 +1,39 @@
 
 
 <div style="position:absolute;left:100px">
-  <h3>
-    {{data.firstname}} {{data.lastname}}
-  </h3>
+  <h2>
+    {{ data.firstname | capitalize }} {{ data.lastname | capitalize }}
+  </h2>
 </div>
+<br /><br /><br />
 <div style="position:absolute;left:100px">
-  <br>
-  <br>
-  <h6>Email:</h6> {{data.email}}<br><br />
+  <dl class="row">
+    <dt class="col-sm-2">Email:</dt>
+    <dd class="col-sm-10">{{data.email}}</dd>
 
-  <h6>Address:</h6>{{data.address}}<br><br>
+    <dt class="col-sm-2">Address:</dt>
+    <dd class="col-sm-10">{{data.address}}</dd>
 
-  <h6>User Name:</h6>{{data.username}}<br><br>
+    <dt class="col-sm-2">User Name:</dt>
+    <dd class="col-sm-10">{{data.username}}</dd>
 
-  <h6>Password:</h6>{{data.password}}<br><br>
+    <dt class="col-sm-2">Password:</dt>
+    <dd class="col-sm-10">{{data.password}}</dd>
 
-  <h6>Gender:</h6>{{data.gender}}<br><br>
+    <dt class="col-sm-2">Gender:</dt>
+    <dd class="col-sm-10">{{data.gender}}</dd>
 
-  <h6>Qualification:</h6>{{data.qualification}}<br><br>
+    <dt class="col-sm-2">Qualification:</dt>
+    <dd class="col-sm-10">{{data.qualification | capitalize}}</dd>
 
-  <h6>Experience:</h6>{{data.experience}}<br><br>
+    <dt class="col-sm-2">Experience:</dt>
+    <dd class="col-sm-10">{{data.experience}}</dd>
 
-  <h6>Coding Languages:</h6>{{data.langKnown}}<br><br>
+    <dt class="col-sm-2">Coding Languages:</dt>
+    <dd class="col-sm-10">{{data.langKnown}}</dd>
+  </dl>
 
+  <div>
+    <button class="btn btn-warning" [routerLink]="['/list']">Back To List</button>
   </div>
+</div>
